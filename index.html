@@ -21,22 +21,36 @@
                             <div class="mb-3">
                                 <img src="img/male.jpg" alt="Male" class="brand-logo img-fluid rounded-circle"/>
                             </div>
-                            <h1 class="pt-4 text-white h2">我是 <span>颜伟明</span> & I'm <span>YanWM</span></h1>
+                            <h1 class="pt-4 text-white h2"><span style="font-size: 0.7em;">我是</span> <span style="font-family: 'KaiTi', '楷体', 'STKaiti', serif;">颜伟明</span> & I'm <span>YanWM</span></h1>
                             <p class="mt-4 lead text-white">
                                 我在努力适应这个世界 &<br>
 								我在认真对待每一件事 &<br>
 								我在思考我的目的...
                             </p>
                             <p class="mt-2">
-                                <a href="#"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3" title="颜伟明"></em></a>
-                                <a href="#"><em class="ion-social-github text-github-alt icon-sm mr-3" title="颜伟明"></em></a>
+                                <a href="http://nas.688917.xyz:666/"><em class="ion-android-person text-twitter-alt icon-sm mr-3" title="个人主页"></em></a>
+                                <a href="http://nas.688917.xyz:8096/"><em class="ion-film-marker text-github-alt icon-sm mr-3" title="影视库"></em></a>
                                 <a href="#"><em class="ion-social-linkedin text-linkedin-alt icon-sm mr-3" title="颜伟明"></em></a>
                                 <a href="#"><em class="ion-social-facebook text-facebook-alt icon-sm mr-3" title="颜伟明"></em></a>
                             </p>
                             <div class="pt-3">
-                                <a href="mailto:mynameiscain@qq.com" class="btn btn-white-alt text-blue btn-lg">
+                                <a href="mailto:mynameiscain@qq.com" target="_blank" class="btn btn-white-alt text-blue btn-lg">
                                     发送邮件
                                 </a>
+								<p class="mt-2 small text-muted">如果没有默认邮件客户端，请手动复制邮箱地址：<span id="email">mynameiscain@qq.com</span>
+								<button onclick="copyEmail()" class="btn btn-link btn-sm">复制</button>
+								</p>
+								<script>
+								function copyEmail() 
+								{
+								const email = document.getElementById('email').innerText;
+								navigator.clipboard.writeText(email).then(() => {
+								alert('邮箱地址已复制：' + email);
+								}).catch(() => {
+								alert('复制失败，请手动复制。');
+								});
+								}
+</script>
                             </div>
                         </div>
                     </div>
