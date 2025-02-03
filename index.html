@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html lang="zh">
     <head>
         <meta charset="utf-8">
+		<meta name="keywords" content="颜伟明, YanWM, 个人主页,名片">
+		<meta name="author" content="YanWM">
         <title>YanWM - 名片</title>
         <meta name="description" content="颜伟明" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +23,7 @@
                     <div class="card border-none col-lg-6 col-md-8 col-sm-10 mx-auto bg-texture">
                         <div class="card-body text-white text-center py-4">
                             <div class="mb-3">
-                                <img src="img/male.jpg" alt="Male" class="brand-logo img-fluid rounded-circle"/>
+                                <img src="img/male.jpg" alt="个人头像" class="brand-logo img-fluid rounded-circle"/>
                             </div>
                             <h1 class="pt-4 text-white h2"><span style="font-size: 0.7em;">我是</span> <span style="font-family: 'KaiTi', '楷体', 'STKaiti', serif;">颜伟明</span> & I'm <span>YanWM</span></h1>
                             <p class="mt-4 lead text-white">
@@ -36,23 +38,19 @@
                                 <a href="#"><em class="ion-social-facebook text-facebook-alt icon-sm mr-3" title="颜伟明"></em></a>
                             </p>
                             <div class="pt-3">
-                                <a href="mailto:mynameiscain@qq.com" target="_blank" class="btn btn-white-alt text-blue btn-lg">
+                                <a href="mailto:yanwm@688917.xyz" target="_blank" class="btn btn-white-alt text-blue btn-lg">
                                     发送邮件
                                 </a>
-								<p class="mt-2 small text-muted">如果没有默认邮件客户端，请手动复制邮箱地址：<span id="email">mynameiscain@qq.com</span>
+								<p class="mt-2 small text-muted">如果没有默认邮件客户端，请手动复制邮箱地址：<span id="email">yanwm@688917.xyz</span>
 								<button onclick="copyEmail()" class="btn btn-link btn-sm">复制</button>
 								</p>
 								<script>
-								function copyEmail() 
-								{
-								const email = document.getElementById('email').innerText;
-								navigator.clipboard.writeText(email).then(() => {
-								alert('邮箱地址已复制：' + email);
-								}).catch(() => {
-								alert('复制失败，请手动复制。');
-								});
-								}
-</script>
+									function copyEmail() 
+									{
+										const email = document.getElementById('email').innerText;
+										navigator.clipboard.writeText(email).then(() => {alert('邮箱地址已复制：' + email);}).catch(() => {alert('复制失败，请手动复制。');});
+									}
+								</script>
                             </div>
                         </div>
                     </div>
